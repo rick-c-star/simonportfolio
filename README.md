@@ -1,6 +1,23 @@
 # Simon's Portfolio
 
-A personal portfolio website built with **PHP**, **CSS**, and **JavaScript**, ready to host on [Infinity Free](https://www.infinityfree.com/) (or any PHP web host).
+🌐 **Live site:** [https://simonpatrickportfolio.42web.io/](https://simonpatrickportfolio.42web.io/?i=1)
+
+A personal portfolio website built with **PHP**, **CSS**, and **JavaScript**, hosted on [Infinity Free](https://www.infinityfree.com/).
+
+## Syncing your existing htdocs files
+
+If you already have your portfolio files on Infinity Free and want this repository to mirror them:
+
+1. Download your files from Infinity Free using the **File Manager** → select all → compress → download, or via FTP.
+2. Copy every file from your `htdocs` folder into the **root of this repository**, replacing the placeholder files if needed.
+3. Commit and push:
+   ```bash
+   git add .
+   git commit -m "Add real portfolio files from Infinity Free"
+   git push
+   ```
+
+Your live site will continue to serve from Infinity Free. This repository becomes your backup and version-control source.
 
 ## Features
 
@@ -15,7 +32,7 @@ A personal portfolio website built with **PHP**, **CSS**, and **JavaScript**, re
 ## File Structure
 
 ```
-htdocs/
+htdocs/  (root of this repository)
 ├── index.php        # Main page (Hero, About, Skills, Projects, Contact)
 ├── contact.php      # Contact form handler
 ├── .htaccess        # URL rewriting, security headers, caching
